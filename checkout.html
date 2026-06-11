@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="js/main.js" defer></script>
+    <title>Checkout</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning-subtle">
+            <div class="container">
+
+               <button class="navbar-toggler me-2" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand mx-lg-0 mx-auto">
+                    <img src="./images/Black Modern MS Logo (3).png" alt="pic" class="img-fluid">
+                </a>
+
+                <div class="d-flex align-items-center gap-3 order-lg-3">
+
+                    <div class="d-none d-lg-flex align-items-center rounded px-2">
+                       <span class="material-symbols-outlined small me-2">search</span>
+                       <input type="text" class="form-control shadow-none small" placeholder="search">
+                    </div>
+
+                    <a href="#" class="nav-link p-0">
+                      <span class="material-symbols-outlined" onclick="cartAlert()">shopping_cart</span>
+                    </a>
+
+                    <a href="login.html" class="nav-link p-0">
+                       <span class="material-symbols-outlined">account_circle</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                         <li class="nav-item"><a href="login.html" class="nav-link">Contact</a></li>
+                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="sales.html" class="nav-link text-danger">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+   <ol class="breadcrumb mt-2 ms-3 text-muted">
+    <li class="breadcrumb-item">Home</li>
+    <li class="breadcrumb-item">Cart</li>
+    <li class="breadcrumb-item">Checkout</li>
+   </ol>
+
+    <main class="container my-5">
+
+        <h3 class="text-center mb-4">Checkout</h3>
+
+        <div class="row g-5">
+
+            <div class="col-12 col-lg-5 offset-lg-2 order-1 order-lg-2">
+               
+                <h5 class="mb-3">Review your Cart</h5>
+
+                <div class="border rounded p-4">
+
+                    <div class="row align-items-center mb-4 pb-3 border-bottom">
+                        <div class="col-4">
+                            <img src="./images/blazer.webp" alt="blazer" class="img-fluid rounded">
+                        </div>
+                        <div class="col-5">
+                            <p class="mb-1 fw-semibold">Blazer</p>
+                            <small class="text-muted">Size: S</small>
+                            <div class="mt-2">
+                                <div class=" d-inline-flex align-items-center border rounded gap-2 overflow-hidden">
+                                <button class="btn btn-sm btn-outline-secondary qty-btn border-0 px-2">-</button>
+                                <span class="px-3 small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary qty-btn border-0 px-2">+</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 text-end fw-bold">95$</div>
+                    </div>
+
+                    <div class="row align-items-center mb-4 pb-3 border-bottom">
+                        <div class="col-4">
+                            <img src="./images/bluseout.jpg" alt="blouse" class="img-fluid rounded">
+                        </div>
+                        <div class="col-5">
+                            <p class="mb-1 fw-semibold">Blouse</p>
+                            <small class="text-muted">Size: M</small>
+                            <div class="mt-2">
+                                <div class="d-inline-flex align-items-center border rounded gap-2 overflow-hidden">
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">-</button>
+                                <span class="px-3 small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">+</button>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3 text-end fw-bold">56$</div>
+                    </div>
+
+                    <div class="row align-items-center mb-4 pb-3 border-bottom">
+                        <div class="col-4">
+                            <img src="./images/Jeans2.jpg" alt="jeans" class="img-fluid rounded">
+                        </div>
+                        <div class="col-5">
+                            <p class="mb-1 fw-semibold">Jeans</p>
+                            <small class="text-muted">Size:</small>
+                            <div class="mt-2">
+                                <div class="d-inline-flex align-items-center border rounded gap-2 overflow-hidden ">
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">-</button>
+                                <span class="px-3 small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">+</button>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3 text-end fw-bold">46$</div>
+                    </div>
+
+                    <div class="row align-items-center mb-4 pb-3 border-bottom">
+                        <div class="col-4">
+                            <img src="./images/sweater.jpg" alt="sweater" class="img-fluid rounded">
+                        </div>
+                        <div class="col-5">
+                            <p class="mb-1 fw-semibold">Sweater</p>
+                            <small class="text-muted">Size: XL</small>
+                            <div class="mt-2">
+                                <div class="d-inline-flex align-items-center border rounded gap-2 overflow-hidden">
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">-</button>
+                                <span class="px-3 small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary border-0 px-2">+</button>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3 text-end fw-bold">89$</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between pt-3">
+                        <span class="fw-bold">Total</span>
+                        <span class="fw-bold">$252</span>
+                    </div>
+
+
+                </div>
+                
+                <div class="d-flex justify-content-center mt-4">
+
+                <form action="#" class="d-flex gap-4 promo-form">
+
+                <input type="text" name="promo" id="promo" placeholder="Add promo code" class="form-control w-75">
+                <button onclick="validateAndNotify()" class="btn btn-dark px-4" type="submit">Apply</button>
+
+                </form>
+
+                </div>
+              
+               
+
+            </div>
+
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+
+                <form id="checkOutForm">
+                     <h5 class="mb-3">Shipping Information</h5>
+
+                <div class="border rounded p-4">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" class="form-control">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" id="address" name="address" class="form-control">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="apartment" class="form-label">Apartment, suite etc.</label>
+                            <input type="text" id="apartment" name="apartment" class="form-control">
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <label for="country" class="form-label">Country</label>
+                            <select name="counrty" id="counrty" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="serbia">Serbia</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <label for="city" class="form-label">City</label>
+                            <select name="city" id="city" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="bg">belgrade</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <label for="zip" class="form-label">Zip</label>
+                            <select name="zip" id="zip" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="232132">232132</option>
+                            </select>
+                        </div>
+
+                    </div>  
+                    
+                    <div class="form-check mt-3">
+                        <input type="checkbox" id="saveInfo" class="form-check-input">
+                        <label for="saveInfo" class="form-check-label">
+                            Save contact information
+                        </label>
+                    </div>
+                </div>  
+                
+                <h5 class="mt-5 mb-3">Payment Information</h5>
+
+                 <div class="border rounded p-4">
+                    <div class="d-flex gap-2 mb-4">
+                        <button type="button" class="btn btn-outline-primary w-50">PayPal</button>
+                        <button type="button" class="btn btn-dark w-50">Cash</button>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="cardName" class="form-label">Cardholder Name</label>
+                        <input type="text" name="cardName" id="cardName" class="form-control">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" class="form-control">
+
+                        <div id="cardNumberError" class="text-danger small mt-1" aria-live="polite"></div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <label for="month" class="form-label">Month</label>
+                            <select name="month" id="month" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="january">January</option>
+                            </select>
+                        </div>
+
+                         <div class="col-12 col-md-4">
+                            <label for="year" class="form-label">Year</label>
+                            <select name="year" id="year" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="2014">2014</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <label for="cvc" class="form-label">CVC</label>
+                            <select name="cvc" id="cvc" class="form-select">
+                                <option value="" selected disabled></option>
+                                <option value="cvc">CVC</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button class="btn btn-dark w-100 mt-4" type="submit">Pay</button>
+                 </div>
+                </form>
+
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-light border-top mt-5 pt-4 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#infoCollapse">
+                    SHOP
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">SHOP</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>About</li>
+                         <li>Terms and Conditions</li>
+                         <li>Privacy Policy</li>
+                         <li>Delivery and Return</li>
+                    </ul>
+
+                    <div id="infoCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                         <li>About</li>
+                         <li>Terms and Conditions</li>
+                         <li>Privacy Policy</li>
+                         <li>Delivery and Return</li>
+                         </ul>
+                    </div>
+                </div>
+
+                 <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#shopCollapse">
+                    INFORMATION
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">INFORMATION</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>Dresses</li>
+                         <li>Jackets</li>
+                         <li>Skirts</li>
+                         <li>Shoes & Bags</li>
+                         <li>Gift Cards</li>
+                         <li>Sales & Offers</li> 
+                    </ul>
+
+                    <div id="shopCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                                <li>Dresses</li>
+                                <li>Jackets</li>
+                                <li>Skirts</li>
+                                <li>Shoes & Bags</li>
+                                <li>Gift Cards</li>
+                                <li>Sales & Offers</li>
+                         </ul>
+                    </div>
+                </div>
+
+                  <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#supportCollapse">
+                    CUSTOMER SUPPORT
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">CUSTOMER SUPPORT</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>Contact</li>
+                         <li>Help</li>
+                         <li>FAQ</li>
+                    </ul>
+
+                    <div id="supportCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                         <li>Contact</li>
+                         <li>Help</li>
+                         <li>FAQ</li>
+                         </ul>
+                    </div>
+                </div>
+
+                    
+            <div class="row mt-4 pt-3 border-top align-items-center">
+
+                <div class="col-12 col-md-6 small text-muted">
+                    Designed and developed by: <strong>ITAcademy</strong>
+                </div>
+
+                <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
+                    <i class="bi bi-facebook me-3"></i>
+                    <i class="bi bi-instagram me-3"></i>
+                    <i class="bi bi-tiktok"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+

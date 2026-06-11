@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="js/main.js" defer></script>
+    <title>Shop</title>
+</head>
+<body>
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning-subtle">
+            <div class="container">
+
+               <button class="navbar-toggler me-2" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand mx-lg-0 mx-auto">
+                    <img src="./images/Black Modern MS Logo (3).png" alt="pic" class="img-fluid">
+                </a>
+
+                <div class="d-flex align-items-center gap-3 order-lg-3">
+
+                    <div class="d-none d-lg-flex align-items-center rounded px-2">
+                       <span class="material-symbols-outlined small me-2">search</span>
+                       <input type="text" class="form-control shadow-none small" placeholder="search">
+                    </div>
+
+                    <a href="checkout.html" class="nav-link p-0">
+                      <span class="material-symbols-outlined" onclick="cartAlert()">shopping_cart</span>
+                    </a>
+
+                    <a href="login.html" class="nav-link p-0">
+                       <span class="material-symbols-outlined">account_circle</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                         <li class="nav-item"><a href="login.html" class="nav-link">Contact</a></li>
+                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="sales.html" class="nav-link text-danger">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="shop">
+     
+    <ol class="breadcrumb mt-2 ms-3 text-muted">
+    <li class="breadcrumb-item">Home</li>
+    <li class="breadcrumb-item">Cart</li>
+    <li class="breadcrumb-item">Checkout</li>
+   </ol>
+
+        <section class="content">
+            
+            <div class="page-title">
+                <h1>View All Products</h1>
+            </div>
+        </section>
+
+        <aside class="filters">
+            <h1 class="title">Filters</h1>
+            
+            <p>Price ></p>
+            <p>Brand &#9660;</p>
+
+            <div class="filter-item"> 
+            <input type="checkbox" id="zara">
+            <label for="zara">Zara</label>
+            </div>
+
+            <div class="filter-item">
+            <input type="checkbox" id="hm">
+            <label for="hm">H&M</label>
+            </div>
+
+            <div class="filter-item">
+            <input type="checkbox" id="breshka">
+            <label for="breshka">Breshka</label>
+            </div>
+
+            <div class="filter-item">
+            <input type="checkbox" id="koton">
+            <label for="koton">KOTON</label>
+            </div>
+
+            <p>Categories &#9660;</p>
+
+            <div class="filter-item">
+            <input type="checkbox" id="fleece">
+            <label for="fleece">Fleece</label>
+            </div>
+
+            <div class="filter-item">
+            <input type="checkbox" id="sweaters">
+            <label for="sweaters">Sweaters</label>
+            </div>
+
+            <div class="filter-item">
+            <input type="checkbox" id="shitrs">
+            <label for="shitrs">Shitrs</label>
+            </div>
+
+            <div class="filter-item"> 
+            <input type="checkbox" id="tshirt">
+            <label for="tshirt">T-Shirts</label>
+            </div>
+
+           <div class="filter-item"> 
+           <input type="checkbox" id="all">
+           <label for="all">All items</label>
+           </div>
+
+            <p>Collection &#9660;</p>
+
+             <div class="filter-item">
+                <input type="checkbox" id="spring">
+                <label for="spring">Spring/Summer</label>
+             </div>
+
+
+            <div class="filter-item">
+                <input type="checkbox" id="autumn">
+                <label for="autumn">Autumn/Winter</label>
+            </div>
+
+            <p>Colors ></p>
+            <p>Other ></p>
+
+            <button type="button">Apply Filters</button>
+        </aside>
+           
+        <section class="products">
+
+            <div class="product">
+                <span class="sale">SALE</span>
+                <span class="discount">-40%</span>
+                <img src="./images/blazer.webp" alt="blazer">
+                <h4>Blazer</h4>
+                <p>$95</p>
+                <button type="button" onclick="dodajNaIznos(95)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/Jeans1.webp" alt="jeans">
+                <h4>Jeans</h4>
+                <p>$72</p>
+                <button type="button" onclick="dodajNaIznos(72)">Add to Cart</button>
+            </div>
+
+             <div class="product">
+                <span class="sale">SALE</span>
+                <span class="discount">-40%</span>
+                <img src="./images/shorts.jpg" alt="shorts">
+                <h4>Shorts</h4>
+                <p>$62</p>
+                <button type="button" onclick="dodajNaIznos(62)">Add to Cart</button>
+            </div>
+
+             <div class="product">
+                <img src="./images/blazer2.webp" alt="blazer">
+                <h4>Blazer</h4>
+                <p>$123</p>
+                <button type="button" onclick="dodajNaIznos(123)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/sweater.jpg" alt="sweater">
+                <h4>Sweater</h4>
+                <p>$40</p>
+                <button type="button" onclick="dodajNaIznos(40)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/tshirt1.webp" alt="tshirt">
+                <h4>Tshirt</h4>
+                <p>$44</p>
+                <button type="button" onclick="dodajNaIznos(44)">Add to Cart</button>
+            </div>
+
+              <div class="product">
+                <span class="sale">SALE</span>
+                <span class="discount">-40%</span>
+                <img src="./images/Jeans2.jpg" alt="jeans">
+                <h4>Jeans</h4>
+                <p>$67</p>
+                <button type="button" onclick="dodajNaIznos(67)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/tshirt2.webp" alt="tshirt">
+                <h4>Tshirt</h4>
+                <p>$33</p>
+                <button type="button" onclick="dodajNaIznos(33)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/sweater1.webp" alt="sweater">
+                <h4>Sweater</h4>
+                <p>$89</p>
+                <button type="button" onclick="dodajNaIznos(89)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/Tshirt.jpg" alt="tshirt">
+                <h4>Tshirt</h4>
+                <p>$24</p>
+                <button type="button" onclick="dodajNaIznos(24)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./images/sweater.jpg" alt="sweater">
+                <h4>Sweater</h4>
+                <p>$56</p>
+                <button type="button" onclick="dodajNaIznos(56)">Add to Cart</button>
+            </div>
+
+               <div class="product">
+                <img src="./images/Navy-Lorenzo_f13a7127-2eb5-49f8-b5e8-f677f84a31c6_900x.webp" alt="blazer">
+                <h4>Blazer</h4>
+                <p>$100</p>
+                <button type="button" onclick="dodajNaIznos(100)">Add to Cart</button>
+            </div>
+        </section>
+        
+        <div class="numbelow">
+            
+            <hr>
+            
+            <div class="numbelow-links">
+                <a href="#" class="navig">Back</a>
+                    
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+
+                    <a href="#" class="navig">Next</a>
+            </div>
+        </div>
+
+         <section class="hero">
+            <h1>STAY UP TO DATE ABOUT 
+             <br> OUR BEST OFFERS!
+            </h1>
+             
+            <div class="email-box">
+                <input type="email" placeholder="Enter your email address" required>
+                
+                <button type="button">Subscribe to Newslatter</button>
+            </div>
+
+            <div class="clear"></div>
+         </section>
+    </main>
+
+    <footer class="bg-light border-top mt-5 pt-4 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#infoCollapse">
+                    SHOP
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">SHOP</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>About</li>
+                         <li>Terms and Conditions</li>
+                         <li>Privacy Policy</li>
+                         <li>Delivery and Return</li>
+                    </ul>
+
+                    <div id="infoCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                         <li>About</li>
+                         <li>Terms and Conditions</li>
+                         <li>Privacy Policy</li>
+                         <li>Delivery and Return</li>
+                         </ul>
+                    </div>
+                </div>
+
+                 <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#shopCollapse">
+                    INFORMATION
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">INFORMATION</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>Dresses</li>
+                         <li>Jackets</li>
+                         <li>Skirts</li>
+                         <li>Shoes & Bags</li>
+                         <li>Gift Cards</li>
+                         <li>Sales & Offers</li> 
+                    </ul>
+
+                    <div id="shopCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                                <li>Dresses</li>
+                                <li>Jackets</li>
+                                <li>Skirts</li>
+                                <li>Shoes & Bags</li>
+                                <li>Gift Cards</li>
+                                <li>Sales & Offers</li>
+                         </ul>
+                    </div>
+                </div>
+
+                  <div class="col-12 col-md-4">
+                  
+                    <button 
+                    class="d-flex d-md-none w-100 justify-content-between align-items-center fw-bold bg-trasparent border-0 px-0 py-2" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#supportCollapse">
+                    CUSTOMER SUPPORT
+                   <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <h6 class="fw-bold d-none d-md-block">CUSTOMER SUPPORT</h6>
+
+                    <ul class="list-unstyled small text-muted d-none d-md-block">
+                         <li>Contact</li>
+                         <li>Help</li>
+                         <li>FAQ</li>
+                    </ul>
+
+                    <div id="supportCollapse" class="collapse d-md-none">
+                         <ul class="list-unstyled small text-muted mt-2">
+                         <li>Contact</li>
+                         <li>Help</li>
+                         <li>FAQ</li>
+                         </ul>
+                    </div>
+                </div>
+
+                    
+            <div class="row mt-4 pt-3 border-top align-items-center">
+
+                <div class="col-12 col-md-6 small text-muted">
+                    Designed and developed by: <strong>ITAcademy</strong>
+                </div>
+
+                <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0">
+                    <i class="bi bi-facebook me-3"></i>
+                    <i class="bi bi-instagram me-3"></i>
+                    <i class="bi bi-tiktok"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
